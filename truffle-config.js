@@ -46,6 +46,7 @@ module.exports = {
     // tab if you use this network and you must also set the `host`, `port` and `network_id`
     // options below to some value.
     //
+    // ganache: { provider: function () { return new Web3.providers.HttpProvider("http://127.0.0.1:7545"); }, },
     development: {
       host: "127.0.0.1",     // Localhost (default: none)
       port: 9545,            // Standard Ethereum port (default: none)
@@ -54,12 +55,12 @@ module.exports = {
 
     // Another network with more advanced options...
     // advanced: {
-      // port: 8777,             // Custom port
-      // network_id: 1342,       // Custom network
-      // gas: 8500000,           // Gas sent with each transaction (default: ~6700000)
-      // gasPrice: 20000000000,  // 20 gwei (in wei) (default: 100 gwei)
-      // from: <address>,        // Account to send txs from (default: accounts[0])
-      // websockets: true        // Enable EventEmitter interface for web3 (default: false)
+    // port: 8777,             // Custom port
+    // network_id: 1342,       // Custom network
+    // gas: 8500000,           // Gas sent with each transaction (default: ~6700000)
+    // gasPrice: 20000000000,  // 20 gwei (in wei) (default: 100 gwei)
+    // from: <address>,        // Account to send txs from (default: accounts[0])
+    // websockets: true        // Enable EventEmitter interface for web3 (default: false)
     // },
 
     // Useful for deploying to a public network.
@@ -75,9 +76,9 @@ module.exports = {
 
     // Useful for private networks
     // private: {
-      // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),
-      // network_id: 2111,   // This network is yours, in the cloud.
-      // production: true    // Treats this network as if it was a public net. (default: false)
+    // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),
+    // network_id: 2111,   // This network is yours, in the cloud.
+    // production: true    // Treats this network as if it was a public net. (default: false)
     // }
   },
 
@@ -89,7 +90,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "0.8.9",    // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.5.16",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       // settings: {          // See the solidity docs for advice about optimization and evmVersion
       //  optimizer: {
